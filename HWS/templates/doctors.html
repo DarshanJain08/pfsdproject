@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <title>Doctors</title>
+</head>
+<body>
+{% include "navbar.html" %}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card" style="background-color: lightblue;">
+      <img src="{% static 'images/doc1.jpg' %}" class="card-img-top" alt="..." width="250" height="350">
+      <div class="card-body">
+        <h5 class="card-title"><b>Dr.Harshil Patel</b></h5>
+        <p class="card-text"><i>MBBS,MS,DNB<br>General Surgoen<br>+91 9827196574</i></p>
+      </div>
+      <div class="card-footer">
+        <button style="background-color: green; color: white;" onclick="window.location.href='/appointments'">Book Appointment!</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="background-color: lightblue;">
+      <img src="{% static 'images/doc3.jpg' %}" class="card-img-top" alt="..." width="250" height="350">
+      <div class="card-body">
+        <h5 class="card-title"><b>Dr.Namita Thapar</b></h5>
+        <p class="card-text"><i>MBBS,BDS<br>Dental Surgeon<br>+91 8966738451</i></p>
+      </div>
+      <div class="card-footer">
+        <button style="background-color: green; color: white;" onclick="alert('Successfully booked Appointment!')">Book Appointment!</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="background-color: lightblue;">
+      <img src="{% static 'images/doc2.jpg' %}" class="card-img-top" alt="..." width="250" height="350">
+      <div class="card-body">
+        <h5 class="card-title"><b>Dr.Dhruv Shah</b></h5>
+        <p class="card-text"><i>MBBS,MD<br>Dermatologist<br>+91 9849273981</i></p>
+      </div>
+      <div class="card-footer">
+        <button style="background-color: green; color: white;" onclick="alert('Successfully booked Appointment!')">Book Appointment!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% load static %}
+{% include "home_navbar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="logined" method="post">
+      {% csrf_token %}
+        <label for="email" class="fl fontLabel"> Email: </label>
+    			<div class="new iconBox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+    			<div class="fr">
+    					<input type="text" name="email" placeholder="Email"
+              class="textBox" autofocus="on" required>
+    			</div>
+    			<div class="clr"></div>
+    		</div>
+
+        <label for="password" class="fl fontLabel"> Password: </label>
+    			<div class="new iconBox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+    			<div class="fr">
+    					<input type="text" name="password" placeholder="Password"
+              class="textBox" autofocus="on" required>
+    			</div>
+    			<div class="fr">
+            <input type="submit" value="submit">
+        </div>
+    		</div>
+    </form>
+</body>
+</html>
